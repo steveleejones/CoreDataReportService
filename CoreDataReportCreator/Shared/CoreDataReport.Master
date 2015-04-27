@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CoreDataReport.master.cs" Inherits="CoreDataReportCreator.Shared.CoreDataReport" %>
+
+<%@ Import Namespace="CoreDataReportCreator.Helpers" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../Scripts/jquery-ui.min-1.11.1.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="../Content/_site.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" style="height: 50px;" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <%--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>--%>
+                    <a class="navbar-brand" href="~/Default.aspx" runat="server" style="font-size: 2.5em;">C o r e &nbsp; ≡ &nbsp; D a t a</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li id="propertyexporter" runat="server"><a runat="server" href="~/PropertyExporter/PropertyExporter.aspx">Property Exporter</a></li>
+                    <li id="offerloader" runat="server"><a runat="server" href="~/./OfferLoader/Pages/Directory.aspx">Offer Loader</a></li>
+                </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="padding-right: 40px;"><a id="loginText" runat="server" href="~/Login/Account.aspx"></a></li>
+                    <li style="padding-right: 20px; padding-top: 7px;"><asp:button class="btn btn-primary" id="loginButton" runat="server" OnClick="loginButton_OnClick" Text="Login" Width="100px"></asp:button></li>
+<%--                    <li style="padding-right: 20px;"><a id="loginlink" runat="server" href="~/Login/Login.aspx">Login</a></li>--%>
+                    <%-- <li>
+                        <asp:LinkButton runat="server" ID="LabelOfferLoaderType" Enabled="true"></asp:LinkButton></li>--%>
+                    <%--           <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>--%>
+                </ul>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container">
+                <ul class="nav nav-justified">
+                    <%--<li class="active">
+                        <asp:LinkButton ID="LinkButtonInspireMe" runat="server" OnClick="LinkButtonInspireMe_OnClick">
+                                        <span class="glyphicon glyphicon-tag"></span>
+                            Inspire Me
+                        </asp:LinkButton>
+                    </li>--%>
+                    <%--<li class="active">
+                        <asp:LinkButton ID="LinkButtonFavourites" runat="server" OnClick="LinkButtonFavourites_OnClick">
+                                        <span class="glyphicon glyphicon-heart"></span>
+                            Favourites
+                        </asp:LinkButton>
+                    </li>--%>
+                    <%-- <li class="active">
+                        <asp:LinkButton ID="LinkButtonSearch" runat="server" OnClick="LinkButtonSearch_OnClick">
+                                        <span class="glyphicon glyphicon-search"></span>
+                            Search
+                        </asp:LinkButton>
+                    </li>--%>
+                    <%-- <li class="active">
+                        <asp:LinkButton ID="LinkButtonTop10" runat="server" OnClick="LinkButtonTop10_OnClick">
+                                        <span class="glyphicon glyphicon-star"></span>
+                            Top 10's
+                        </asp:LinkButton>
+                    </li>--%>
+                    <%-- <li class="active">
+                        <asp:LinkButton ID="LinkButtonMore" runat="server" OnClick="LinkButtonMore_OnClick">
+                                        <span class="glyphicon glyphicon-list"></span>
+                        More
+                        </asp:LinkButton>
+                    </li>--%>
+                </ul>
+            </div>
+        </nav>
+    </form>
+</body>
+</html>

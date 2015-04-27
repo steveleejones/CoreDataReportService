@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDataReportService", "CoreDataReportService\CoreDataReportService.csproj", "{1E175585-AE6F-4948-ADA9-B47C91794065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDataLibrary", "..\CoreDataLibrary\CoreDataLibrary.csproj", "{406E5AE4-D311-418B-B3F8-BD43AA88F867}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0A353930-FBE8-43B8-A2D0-AB1B6219A367}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDataReportCreator", "CoreDataReportCreator\CoreDataReportCreator.csproj", "{9E74451A-FB37-422A-A9C0-F431A5C15AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{8D550778-36BC-46E5-9B6D-FF48DB853A96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E175585-AE6F-4948-ADA9-B47C91794065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E175585-AE6F-4948-ADA9-B47C91794065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E175585-AE6F-4948-ADA9-B47C91794065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E175585-AE6F-4948-ADA9-B47C91794065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{406E5AE4-D311-418B-B3F8-BD43AA88F867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406E5AE4-D311-418B-B3F8-BD43AA88F867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406E5AE4-D311-418B-B3F8-BD43AA88F867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406E5AE4-D311-418B-B3F8-BD43AA88F867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E74451A-FB37-422A-A9C0-F431A5C15AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E74451A-FB37-422A-A9C0-F431A5C15AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E74451A-FB37-422A-A9C0-F431A5C15AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E74451A-FB37-422A-A9C0-F431A5C15AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D550778-36BC-46E5-9B6D-FF48DB853A96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D550778-36BC-46E5-9B6D-FF48DB853A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D550778-36BC-46E5-9B6D-FF48DB853A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D550778-36BC-46E5-9B6D-FF48DB853A96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

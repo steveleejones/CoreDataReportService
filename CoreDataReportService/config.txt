@@ -1,0 +1,1 @@
+﻿PropertySupplierMapping,Runtime=9,Frequency=daily
